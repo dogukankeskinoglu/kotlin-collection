@@ -4,6 +4,11 @@ fun main(){
 
     val words=sentence.split(" ").toMutableList()
 
+    val numbers= mutableListOf(1,4,5,6,7)
+    numbers.sort()
+    println(numbers)
+    //[1, 4, 5, 6, 7]
+    
     println(words)
     //[Bugün, sizlere, kotlin, collectionlar, ile, bilgi, vereceğim., Bu, kısımda, order, örneği, olacak]
 
