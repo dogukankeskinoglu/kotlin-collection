@@ -4,19 +4,18 @@ fun main() {
 
     val password = "missiere*"
     val password2 = "missiere*U"
-    //En az bir char büyük harf ise true(false döner)
-    println(password.any { it.isUpperCase() })
-
-    //Bütün charlar harf ise true(*'dan dolayı false döner)
-    println(password2.all { it.isLetter() })
-
-    //Hiçbir char sayı değil ise true
-    println(password2.none { it.isDigit() })
+    
+    println(password.any { it.isUpperCase() })//false
+    
+    println(password2.all { it.isLetter() })//false
+    
+    println(password2.none { it.isDigit() })//true
 
     val numbers = (0..10 step 2).toMutableList()
 
-    println(numbers.all { it % 2 == 0 })
+    println(numbers.all { it % 2 == 0 })//true
 
-    println(numbers.any { it == 5 })
+    println(numbers.any { it == 5 })//false
+
 
 }
